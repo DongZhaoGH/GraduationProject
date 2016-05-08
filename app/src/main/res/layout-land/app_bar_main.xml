@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+   >
+    <!--fitsSystemWindows :boolean值的内部属性，让view可以根据系统窗口(如status bar)来调整自己的布局-->
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+        <!--app:popupTheme，这个属性就是用来自定义我们弹出的菜单的样式-->
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/more_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:fabSize="mini"
+        app:backgroundTint="@android:color/transparent"
+        app:rippleColor="#33728dff"
+        app:elevation="1dp"
+        app:pressedTranslationZ="12dp"
+        android:src="@mipmap/pencle"/>
+</android.support.design.widget.CoordinatorLayout>

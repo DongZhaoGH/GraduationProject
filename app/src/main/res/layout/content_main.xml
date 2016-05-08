@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--tools:context=".activity.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    就是给自己看的,可以看到父窗体的样子-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <!--先随便写一个布局-->
+    <ListView
+        android:id="@+id/lv_listview"
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">工程News</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_one">黑工程教务处首页</string>
+    <string name="action_two">教务系统</string>
+</resources>

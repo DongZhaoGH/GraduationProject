@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我是新手引导界面">
+
+    </android.support.v4.view.ViewPager>
+
+    <Button
+        android:visibility="invisible"
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="83dp"
+        android:background="@drawable/splash_button"
+        android:textColor="@color/splash_button_color" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/ll_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_red_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/guid_point_red" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

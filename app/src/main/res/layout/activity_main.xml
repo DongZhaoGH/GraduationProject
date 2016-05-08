@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--NavigationView，导航View。一般我们用它和DrawerLayout实现抽屉式导航设计
+NavigationView通常放置在DrawerLayout内部
+android:fitsSystemWindows 的值用于设置状态栏透明化与否。
+android:layout_gravity 可设置抽屉，也就是NavigationView从左边或是右边打开。
+app:menu 用于设置菜单内容的xml布局。
+app:headerLayout 用于设置NavigationView的HeaderView的xml布局文件。-->
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <!--内容布局-->
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!--:NavigationView:
+    app:headerLayout 控制用于 header 的可选布局。
+    app:menu 是用于填充导航项的菜单资源，同时也可以在运行时更新导航项内容-->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer"/>
+
+</android.support.v4.widget.DrawerLayout>
